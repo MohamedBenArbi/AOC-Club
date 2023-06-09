@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Raleway ;
+    color: black;
+    
+
+
+}
+
+body{
+    height: 750vh;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation{
+    display: flex;
+}
+
+.logo-container{
+    width: 30% ;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-logo{
+    width: 80%;
+}
+
+.navigation{
+    width:40% ;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    list-style: none;
+    min-width: 300px;
+    font-weight: 800;
+    
+    
+}
+
+.navigation li {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+   
+}
+
+.navigation li:hover{
+   text-decoration: underline;
+   text-decoration-color: #FCCD0A;
+   text-decoration-thickness: 4px;
+   
+}
+
+
+
+.joinus{
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FCCD0A;
+    font-family: Raleway ;
+    font-weight: 800;
+}
+
+
+.background{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
