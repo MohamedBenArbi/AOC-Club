@@ -12,9 +12,11 @@ function Header() {
       <label for="check" className='checkbtn'>
       <FontAwesomeIcon icon={faBars} />
       </label>
+      <a href='/'>
       <label className='logo'>
          <img src={Logo}  />
       </label>
+      </a>
       <button className='joinus1'>Join Us</button>
 
       <ul>
