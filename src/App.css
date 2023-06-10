@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none ; 
+    
     box-sizing: border-box;
     font-family: Raleway;
     color: black;
@@ -16,6 +16,8 @@ body{
 nav{
    height: 80px;
    width: 100%;
+   position: fixed;
+   background-color: white;
 }
 
 
@@ -69,6 +71,7 @@ a:hover{
 section img{
     width: 100%;
     background: url("./assets/photos/background.jpg") no-repeat;
+    margin-top: 80px;
     height: calc(100vh - 80px);
     background-size:cover;
 }
@@ -98,6 +101,61 @@ section img{
 }
 
 
+.about{
+    width: 100%;
+    box-sizing: inherit;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    margin-top: 50px;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+
+ .about-image-container {
+    width: 35%;
+    
+}
+
+.about img{
+    width: 100%;
+    border-radius: 20px 20px  0 0;
+}
+
+.about-desc-container{
+ 
+    line-height:27px ;
+    width: 50%;
+
+}
+
+.about h3{
+    font-size: 24px;
+    color: #FFC040 ;
+    padding: 10px;
+}
+
+.about h1{
+    font-size: 40px;
+        padding: 10px;
+
+}
+
+.about p {
+    font-size: 16px;
+        padding: 10px;
+
+}
+
+.about ul {
+    list-style-type: circle;
+    
+}
+
+
+
+
+
 @media (max-width:1100px) {
     label.logo img{
         padding: 0px;
@@ -123,7 +181,7 @@ section img{
     .joinus1{
         display: block;
     }
-    ul{
+   nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -152,6 +210,46 @@ section img{
     #check:checked ~ ul {
         left: 0;
     }
+
+    .about{
+        width: 100%;
+        box-sizing: inherit;
+       flex-direction: column;
+        padding-top: 20px;
+        margin-top: 20px;
+        display: flex;
+        background-color: #f5f5f5;
+        align-items: center;
+    }
+    
+    .about .about-image-container{
+        width: 80%;
+
+    }
+
+    .about-desc-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        padding: 40px;
+        padding-top: 0;
+    }
+    .about img {
+        width: 100%;
+    }
+
+    .about h3{
+        font-size: 20px;
+    }
+
+    .about h1{
+        font-size: 25px;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    
 
  
     

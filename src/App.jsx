@@ -1,5 +1,6 @@
 import './App.css'
 import Background from "./assets/photos/background.jpg"
+import About from "./assets/photos/about.jpg"
 import Header from './components/Header'
 function App() {
 
@@ -10,13 +11,16 @@ function App() {
      <section>
       <img src={Background} />
      </section>
-     <div>
-       <img />
-       <div>
+     <div className='about'>
+      <div className="about-image-container">
+      <img className='about-image' src={About} />
+
+      </div>
+       <div className='about-desc-container'>
         <h3>\About us\</h3>
-        <h1>Breat The Limits</h1>
-        <p>Art of Code Club is a collaboration between IT Students of the Faculty of Science of Bizerte in order to learn and excel in Computer Science field</p>
- 
+        <h1>Breaking The Limits</h1>
+        <p>Art of Code Club is a collaboration between IT Students of the <br/> Faculty of Science of Bizerte in order to learn and excel in Computer Science field</p>
+        <h4>Objectifs : </h4>
        <ul>
         <li>Collaboration between IT students in order to learn and excel in Computer Science field.</li>
         <li>Essential training and workshops to all students to establish basic knowledge in programming and coding</li>
