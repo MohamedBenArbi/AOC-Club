@@ -7,8 +7,9 @@ function App() {
   return (
     <>
    <Header />
-   <img className='background' src={Background} />
-   
+     <section>
+      
+     </section>
     </>
   )
 }
