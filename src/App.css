@@ -152,7 +152,87 @@ section img{
     
 }
 
+.about .title-mobile{
+    display: none;
+}
 
+.event .photo-container img {
+    width: 100%;
+   
+}
+
+
+
+
+.events-container{
+    
+    
+    height: calc( 100vh - 150px);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 15%;
+    column-gap: 2%;
+}
+
+.events{
+    margin-top: 80px;
+    background-color:#f5f5f5 ;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.event{
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
+
+}
+
+.event img:hover{
+   opacity: 0.7;
+ transition: 0.5s;
+}
+
+
+.events h2 , h3{
+    color: #FCCD0A;
+}
+.events h3{
+    font-size: 24px;
+    color: #FFC040 ;
+    padding: 10px;
+}
+
+.events h1{
+    font-size: 40px;
+        padding: 10px;
+}
+
+.event p{
+    float: right;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.events .seemore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.events a{
+    color: #FCCD0A;
+    font-weight: 800;
+}
+
+.events  a:hover{
+    font-size: 25px ;
+    transition: 0.5s;
+}
+.events a:not(:hover){
+    font-size: 20px ;
+    transition: 0.5s;
+}
 
 
 
@@ -175,6 +255,15 @@ section img{
 
 
 @media (max-width:852px) {
+
+     .about .title-desktop{
+        display: none;
+     }
+
+     .about .title-mobile{
+        display: block;
+        font-size: 30px;
+     }
     .checkbtn{
         display: block;
     }
@@ -249,6 +338,64 @@ section img{
     .about p {
         font-size: 15px;
     }
+
+
+    .events-container{
+    
+    
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 45% ;
+        
+    }
+    
+    .events{
+        margin-top: 80px;
+        background-color:#f5f5f5 ;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .event{
+        background-color: white;
+        border-radius: 20px;
+        margin: 5px;
+    
+    }
+    
+
+    
+    .event img:not(:hover){
+        opacity: 1;
+      transition: 0.5s;
+     }
+    
+    .events h2 , h3{
+        color: #FCCD0A;
+        font-size:18px ;
+    }
+    .events h3{
+        font-size: 20px;
+        color: #FFC040 ;
+        padding: 10px;
+    }
+    
+    .events h1{
+        font-size: 20px;
+            padding: 10px;
+    }
+    
+ 
+    
+    .events .seemore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    
+    
     
 
  
