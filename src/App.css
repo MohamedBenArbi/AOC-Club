@@ -18,6 +18,7 @@ nav{
    width: 100%;
    position: fixed;
    background-color: white;
+   
 }
 
 
@@ -182,17 +183,15 @@ section img{
 }
 
 .event{
+    height:fit-content;
     background-color: white;
     padding: 20px;
     margin: 15px;
     border-radius: 20px;
+    
 
 }
 
-.event img:hover{
-   opacity: 0.7;
- transition: 0.5s;
-}
 
 
 .events h2 , h3{
