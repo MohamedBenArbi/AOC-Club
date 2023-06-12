@@ -88,6 +88,11 @@ section img{
     font-weight: 800;
 }
 
+.joinus:hover{
+    background-color: black;
+    color: #FCCD0A;
+}
+
 .joinus1{
     margin-top: 20px;
     margin-right: 5px;
@@ -191,9 +196,6 @@ section img{
     
 
 }
-
-
-
 .events h2 , h3{
     color: #FCCD0A;
 }
@@ -234,6 +236,82 @@ section img{
 }
 
 
+.members-container{
+    
+    
+   
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 10%;
+    column-gap: 2%;
+}
+
+.members{
+    margin-top: 80px;
+    background-color:#f5f5f5 ;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.member{
+    height:fit-content;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
+    
+
+}
+.members h2 , h3{
+    color: #FCCD0A;
+}
+.members h3{
+    font-size: 24px;
+    color: #FFC040 ;
+    padding: 10px;
+}
+
+.members h1{
+    font-size: 40px;
+        padding: 10px;
+}
+
+.member p{
+   
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.members .seemore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    text-decoration: underline;
+}
+.members a{
+    color: #FCCD0A;
+    font-weight: 800;
+}
+
+.members  a:hover{
+    font-size: 25px ;
+    transition: 0.5s;
+}
+.members a:not(:hover){
+    font-size: 20px ;
+    transition: 0.5s;
+}
+
+
+.member .photo-container img {
+    width: 100%;
+   
+}
+
+
 
 @media (max-width:1100px) {
     label.logo img{
@@ -249,6 +327,37 @@ section img{
         height: auto;
         
     }
+    
+}
+
+@media (max-width:1400px){
+    .members-container{
+    
+    
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 45% ;
+        
+    }
+
+    .members .seemore {
+        
+        grid-column-start:1 ;
+        grid-column-end: 3;
+        margin: 40px;
+    }
+
+    .events-container{
+    
+    
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 45% 45% ;
+        
+    }
+   
     
 }
 
@@ -339,15 +448,7 @@ section img{
     }
 
 
-    .events-container{
     
-    
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 45% 45% ;
-        
-    }
     
     .events{
         margin-top: 80px;
@@ -392,6 +493,54 @@ section img{
         justify-content: center;
         align-items: center;
     }
+
+
+
+ 
+    
+    .members{
+        margin-top: 80px;
+        background-color:#f5f5f5 ;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    .member{
+        background-color: white;
+        border-radius: 20px;
+        margin: 5px;
+    
+    }
+    
+
+    
+    .member img:not(:hover){
+        opacity: 1;
+      transition: 0.5s;
+     }
+    
+    .members h2 , h3{
+        color: #FCCD0A;
+        font-size:18px ;
+    }
+    .members h3{
+        font-size: 20px;
+        color: #FFC040 ;
+        padding: 10px;
+    }
+    
+    .members h1{
+        font-size: 20px;
+            padding: 10px;
+    }
+    
+    .members p{
+        font-size: 15px;
+            padding: 10px;
+    }
+ 
+    
+ 
    
     
     

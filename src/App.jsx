@@ -1,12 +1,26 @@
 import './App.css'
-import Background from "./assets/photos/background.jpg"
-import About from "./assets/photos/about.jpg"
+
+
 import Header from './components/Header'
 import Event from './components/Event'
+import Member from './components/Member'
+
 import Ionic from './assets/photos/ionic.jpg'
 import Design from './assets/photos/designnight.jpg'
-
 import Grad from "./assets/photos/graduation.jpg"
+
+import Background from "./assets/photos/background.jpg"
+import About from "./assets/photos/about.jpg"
+
+import Yassmine from './assets/photos/yassmin.jpeg'
+import Mejd from './assets/photos/majd.jpeg'
+import Mayssa from "./assets/photos/mayssa.jpeg"
+import Malek from "./assets/photos/malk.jpeg"
+
+
+
+
+
 function App() {
 
 
@@ -48,6 +62,24 @@ function App() {
        </div>
      </div>
     </div>
+
+
+    <div className="members">
+    <h3>\Team\</h3>
+        <h1>The Team</h1>
+        <div className="members-container">
+          <Member Photo={Yassmine} Name="Yassmine Attaoui" Position="President"/>
+          <Member Photo={Mayssa} Name="Mayssa Oueslati" Position="Secretary"/>
+          <Member Photo={Mejd} Name="Mejd Dorbez" Position="Communication Manager"/>
+          <Member Photo={Malek} Name="Malek" Position="Events Manager"/>
+          <div className='seemore'>
+      <a href="">Meet the rest of the team</a>
+       </div>
+
+        </div>
+      
+    </div>
+    
     </>
   )
 }
